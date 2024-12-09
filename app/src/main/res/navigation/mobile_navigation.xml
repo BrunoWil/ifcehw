@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.bruno.huaweiquiz.ui.login.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.bruno.huaweiquiz.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_simulado"
+            app:destination="@id/navigation_simulado" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_historico"
+        android:name="com.bruno.huaweiquiz.ui.historico.HistoricoFragment"
+        android:label="@string/title_historico"
+        tools:layout="@layout/fragment_historico" />
+
+    <fragment
+        android:id="@+id/navigation_processo"
+        android:name="com.bruno.huaweiquiz.ui.processo.ProcessoFragment"
+        android:label="@string/title_processo"
+        tools:layout="@layout/fragment_processo" />
+
+    <fragment
+        android:id="@+id/navigation_simulado"
+        android:name="com.bruno.huaweiquiz.ui.simulado.SimuladoFragment"
+        android:label="@string/title_simulado"
+        tools:layout="@layout/fragment_simulado" />
+
+
+<!--    <fragment-->
+<!--        android:id="@+id/navigation_logout"-->
+<!--        android:name="com.bruno.huaweiquiz.ui.login.LoginFragment"-->
+<!--        android:label="@string/title_logout"-->
+<!--        tools:layout="@layout/fragment_login" />-->
+</navigation>

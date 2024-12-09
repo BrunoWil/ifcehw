@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">HuaweiQuiz</string>
+    <string name="title_home">Home</string>
+    <string name="title_historico">Historico</string>
+    <string name="title_processo">Processo</string>
+    <string name="title_logout">Logout</string>
+    <string name="title_imagem_huawei">Huawei</string>
+    <string name="sua_senha">Sua senha</string>
+    <string name="seu_email">Seu Email</string>
+    <string name="login">Login</string>
+    <string name="title_simulado" />
+</resources>
